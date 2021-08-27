@@ -42,7 +42,14 @@ public class Person3 {
 	 * @return the reversed string
 	 */
 	private String calc(String input) {
-	  //Person 3 put your implementation here
+	  /* takes the input from the method parameters and 
+	  turns it into a character array. From there it 
+	  uses a forloop to reverse it
+	  */
+	char[] trythis = input.toCharArray();
+        for (int i = try1.length - 1; i >= 0; i--){
+            System.out.print(trythis[i]);
+	}
 	  return null;
 	}
 }
