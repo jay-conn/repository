@@ -47,7 +47,7 @@ public class Person3 {
 	  uses a forloop to reverse it
 	  */
 	char[] trythis = input.toCharArray();
-        for (int i = try1.length - 1; i >= 0; i--){
+        for (int i = trythis.length - 1; i >= 0; i--){
             System.out.print(trythis[i]);
 	}
 	  return null;
