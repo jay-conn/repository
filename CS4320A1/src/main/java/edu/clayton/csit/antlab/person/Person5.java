@@ -8,6 +8,8 @@ package edu.clayton.csit.antlab.person;
  *  @author Qu
  *  @version 1.1
  */
+import java.util.*;
+
 public class Person5 {
   /** Holds the persons real name */
   private String name;
@@ -31,6 +33,25 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
+	  	//creating array to hold caracters in name
+		char[] modName = new char[pname.length()];
+		//populating array
+		for(int i = 0; i < pname.length(); i++){
+			//shifting characters 2 spaces over
+			if(i - 2 > 0){
+				int j = i-2;
+				modName[j] = pname.charAt(i);
+			}
+			else(){
+				int j = i + pname.length() - 2;
+				modName[j] = pname.charAt(i);
+			}
+
+		}
+		//printing array
+		for(int i = 0; i < pname.length(); i++){
+			System.out.print(modName[i]);
+		}
 	  return null;
 	}
 	
@@ -42,8 +63,8 @@ public class Person5 {
 	 * @return the string representing the 
 	 *         object
 	 */
+	
 	public String toString(String input) {
 	  return name + calc(input);
 	}
-
 }
