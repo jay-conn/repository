@@ -19,7 +19,8 @@ public class Person2 {
 	 public Person2(String pname) {
 	   name = pname;
 	 }
-	/**
+
+/**
 	 * This method should take the string
 	 * input and return its characters in
 	 * random order.
@@ -29,19 +30,39 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
-	}
-	/**
-	 * Return a string rep of this object
-	 * that varies with an input string
-	 *
-	 * @param input the varying string
-	 * @return the string representing the 
-	 *         object
-	 */
-	public String toString(String input) {
-	  return name + calc(input);
-	}
+
+
+/**this line is the main method to the program*/
+public static void main(String[] args) {
+//this line would create a new Scanner instance
+Scanner input = new Scanner(System.in);
+
+//this line tell us to enter a string in order to print the line
+System.out.print("Enter string : ");
+
+
+//this would advance the scanner past the current line and returns the input that was skipped.
+String str = input.nextLine();
+String result = calc(str);
+//process the line 
+System.out.println("Result is : " + result);
+//here we are printing out our result
 }
+
+
+/** here the method we used to get all numbers and store it*/
+private static String calc(String str) {
+if (str.length() > 2) {
+char first = str.charAt(0);
+char second = str.charAt(1);
+str = (str.substring(1)).substring(1);
+return str + first + second;
+}
+
+return str;
+
+} 
+
+} // end of method
+
+} // end of class
