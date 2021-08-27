@@ -47,7 +47,7 @@ public class Person2 {
    public static void main(String[] args) {
        // we are creating an object of Person2
        Person2 person2 = new Person2("gtg123b");
-       //then we will print out the sting
+       //then we will print out the string
        System.out.println(person2.toString("gtg123b"));
 
    } end of method 
