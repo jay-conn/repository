@@ -31,7 +31,8 @@ public class Person2 {
 	 * @return the modified string
 	 */
 
-
+import java.util.Scanner;
+public class Person2 {
 /**this line is the main method to the program*/
 public static void main(String[] args) {
 //this line would create a new Scanner instance
