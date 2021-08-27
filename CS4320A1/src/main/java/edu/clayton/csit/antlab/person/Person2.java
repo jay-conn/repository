@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.List;
-
 public class Person2 {
    /** Holds the persons real name */
    private String name;
